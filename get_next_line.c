@@ -70,8 +70,8 @@ char	*read_file(int fd, char *result)
 	char	*buffer;
 	int		byte;
 
-	if (!res)
-		res = ft_calloc(1, 1);
+	if (!result)
+		result = ft_calloc(1, 1);
 	buffer = ft_calloc(BUFFER_SIZE + 1, sizeof(char));
 	byte = 1;
 	while (byte > 0)
@@ -83,17 +83,17 @@ char	*read_file(int fd, char *result)
 			return (NULL);
 		}
 		buffer[byte] = 0;
-		res = ft_free(res, buffer);
+		result = ft_free(result, buffer);
 		if (ft_strchr(buffer, '\n'))
 			break ;
 	}
 	free(buffer);
-	return (res);
+	return (result);
 }
 
 char	*get_next_line(int fd)
 {
-	static char	*temp;
+	static char	*buffer;
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
