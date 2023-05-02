@@ -17,10 +17,13 @@
 # include <stdlib.h>
 
 char	*get_next_line(int fd);
+char	*ft_free(char *buffer, char *buf);
+char	*ft_next(char *buffer);
+char	*ft_line(char *buffer);
 char	*read_file(int fd, char *result);
 void	*ft_calloc(size_t count, size_t size);
 size_t	ft_strlen(const char *str);
-char    *ft_strchr(const char *str, int c);
-char    *ft_strjoin(char const *s1, char const *s2);
+char	*ft_strchr(const char *str, int c);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif

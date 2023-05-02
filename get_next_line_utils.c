@@ -37,7 +37,7 @@ size_t	ft_strlen(const char *str)
 	return (c);
 }
 
-char    *ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
 	char	*runner;
 
@@ -53,31 +53,31 @@ char    *ft_strchr(const char *str, int c)
 	return (NULL);
 }
 
-char    *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-    unsigned int    i; 
-    char            *temp;
-    char            *str;
+	unsigned int	i;
+	char			*temp;
+	char			*str;
 
-    if (!s1 || !s2)
-        return (NULL);
-    i = ft_strlen(s1) + ft_strlen(s2);
-    str = malloc(i + 1);
-    if (!str)
-        return (NULL);
-    temp = str;
-    while (*s1)
-    {
-        *temp = *s1;
-        s1 ++;
-        temp ++;
-    }
-    while (*s2)
-    {
-        *temp = *s2;
-        temp ++;
-        s2 ++;
-    }
-    *temp = '\0';
-    return (str);
+	if (!s1 || !s2)
+		return (NULL);
+	i = ft_strlen(s1) + ft_strlen(s2);
+	str = malloc(i + 1);
+	if (!str)
+		return (NULL);
+	temp = str;
+	while (*s1)
+	{
+		*temp = *s1;
+		s1 ++;
+		temp ++;
+	}
+	while (*s2)
+	{
+		*temp = *s2;
+		temp ++;
+		s2 ++;
+	}
+	*temp = '\0';
+	return (str);
 }
