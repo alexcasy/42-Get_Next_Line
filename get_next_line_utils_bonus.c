@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acasale  <acasale@student.42roma.it >      +#+  +:+       +#+        */
+/*   By: acasale <acasale@student.42roma.it >       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 16:47:40 by acasale           #+#    #+#             */
 /*   Updated: 2023/05/04 16:47:40 by acasale          ###   ########.fr       */
